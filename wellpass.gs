@@ -3,7 +3,7 @@
  * if booking: creates new calendar event in {calendarId} and deletes mail
  * if cancellation: deletes matching calendar events and, if match found, deletes mail
  * @param {labelName} the label to get mails from
- * @param {calendarId} calendar for which to create and delete events
+ * @param {calendarId} GoogleCalendarId for which to create and delete events
  * @param {defaultDuration} default event duration in minutes to use if no duration could be identified in mail
  * @param {maxDuration} maximial duration in minutes to find matching events for deletion
 */
