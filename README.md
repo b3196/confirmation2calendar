@@ -3,11 +3,12 @@ This Google Apps Script extract event details from booking and cancellation conf
 
 ## How it works:
 It loops through all emails with a specific label and checks whether it is a booking or a cancellation confirmation. 
-If it is a booking confirmation, it extracts event details from the mail body or pdf ticket and creates a new Google Calendar event.
-If it is a cancellation confirmation, it checks for matching Google Calendar and deletes the first match.
+- If it is a booking confirmation, it extracts event details from the mail body or pdf ticket and creates a new Google Calendar event.
+- If it is a cancellation confirmation, it checks for matching Google Calendar and deletes the first match.
+
 After the operation is exectured, it deletes the original confirmation email and, if desired, forwards it (with pdf attachments).
 
-## How to set it up for Wellpass:
+## Basic Setup for Wellpass:
 
 1. Create a new Label `Wellpass` in Gmail.
 2. Set up a filter in Gmail to automatically label incoming email confirmations.
